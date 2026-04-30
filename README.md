@@ -1,1 +1,1 @@
-This repository provides the full R coder used in Hirata et al. 
+This repository provides the full R code used in Hirata et al. 
