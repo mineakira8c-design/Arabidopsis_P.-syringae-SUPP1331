@@ -7,7 +7,7 @@ library(reshape2)
 library(RColorBrewer)
 
 # Load the input read count data "01_counttable_SUPP1331.txt" can be downloaded from the GitHub page.
-data = read.delim(file.choose(), header = T, row.names = 1) #read "counttable_SUPP1331.txt"
+data = read.delim(file.choose(), header = T, row.names = 1) #read "01_counttable_SUPP1331.txt"
 data = data[1:32548, ]#Remove mitochondrial and chloroplast genes since poly A enrichment was performed during library preparation.
 tail(data)
 
@@ -170,4 +170,4 @@ Fig5D = ggplot(cc_top5, aes(x = Cluster,
                     color = -log10(p.adjust))) +
   geom_point() +  theme_bw() +  labs(x = NULL, y = NULL, size = "Gene count", color = "log.p") + theme(axis.text.y = element_text(size = 8))
 
-ggsave(file = "Fig5D.png", plot = Fig5D, dpi = 300, width = 6, height = 5)
+ggsave(file = "Fig5D.png", plot = Fig5D, dpi = 300, width = 4, height = 5)
