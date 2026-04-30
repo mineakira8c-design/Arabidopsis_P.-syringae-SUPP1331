@@ -170,4 +170,4 @@ Fig5D = ggplot(cc_top5, aes(x = Cluster,
                     color = -log10(p.adjust))) +
   geom_point() +  theme_bw() +  labs(x = NULL, y = NULL, size = "Gene count", color = "log.p") + theme(axis.text.y = element_text(size = 8))
 
-ggsave(file = "Fig5D.png", plot = Fig5D, dpi = 300, width = 4, height = 5)
+ggsave(file = "Fig5D.png", plot = Fig5D, dpi = 300, width = 5, height = 5)
