@@ -22,4 +22,4 @@ Fig1D <- ggplot(dat, aes(x = RLU, y = CFU, color = Strain)) +
       theme(legend.position="bottom") + theme(legend.title=element_blank()) +
       labs(title = regression) + theme(plot.title = element_text(size = 12))
 
-ggsave(file = "Fig1Dt.png", plot = Fig1D,  dpi = 300, width = 5, height = 5)
+ggsave(file = "Fig1D.png", plot = Fig1D,  dpi = 300, width = 5, height = 5)
